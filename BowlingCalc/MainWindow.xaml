@@ -1,0 +1,39 @@
+﻿<Window x:Class="idk_what_this_is.MainWindow "
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:idk_what_this_is"
+        mc:Ignorable="d"
+        Title="Bowling Calc" Height="400" Width="600">
+
+    <Viewbox Height="auto" Width="auto" OpacityMask="#FF611616">
+        <Grid VerticalAlignment="Center" HorizontalAlignment="Left" Height="248" Background="#FFBDBDBD" Width="386">
+            <Label Content="Insert Name:" HorizontalAlignment="Left" Margin="12,11,0,0" VerticalAlignment="Top" Width="62" FontSize="8"/>
+            <TextBox x:Name="UserInput" HorizontalAlignment="Left" Margin="76,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="21" Background="#FF90B8B6" Foreground="Black" FontSize="8"/>
+            <Label Content="Game 1 Score:" HorizontalAlignment="Left" Margin="12,35,0,0" VerticalAlignment="Top" Width="68" FontSize="8"/>
+            <Label Content="Game 2 Score:" HorizontalAlignment="Left" Margin="12,61,0,0" VerticalAlignment="Top" Width="68" FontSize="8"/>
+            <Label Content="Game 3 Score:" HorizontalAlignment="Left" Margin="12,87,0,0" VerticalAlignment="Top" Width="68" FontSize="8"/>
+            <TextBox x:Name="GameOne" HorizontalAlignment="Left" Margin="76,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="21" Background="#FF90B8B6" Foreground="Black" FontSize="8"/>
+            <TextBox x:Name="GameTwo" HorizontalAlignment="Left" Margin="76,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="21" Background="#FF90B8B6" Foreground="Black" FontSize="8"/>
+            <TextBox x:Name="GameThree" HorizontalAlignment="Left" Margin="76,89,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Height="21" Background="#FF90B8B6" Foreground="Black" FontSize="8"/>
+            <RadioButton x:Name="Male" Content="Male" HorizontalAlignment="Left" Margin="12,141,0,0" VerticalAlignment="Top" Checked="Male_Checked" RenderTransformOrigin="0.576,0.1" Width="41" FontSize="8" Height="14"/>
+            <RadioButton x:Name="Female" Content="Female" HorizontalAlignment="Left" Margin="56,140,0,0" VerticalAlignment="Top" Checked="Female_Checked" Width="54" FontSize="8" Height="15"/>
+            <RadioButton x:Name="Other" Content="Other" HorizontalAlignment="Left" Margin="109,140,0,0" VerticalAlignment="Top" Checked="Other_Checked" Width="41" FontSize="8" Height="15"/>
+            <Button x:Name="CalculateBtn" Content="Calculate" HorizontalAlignment="Left" Margin="12,168,0,0" VerticalAlignment="Top" Click="Calculate"/>
+            <TextBlock Margin="175,14,125,0" TextWrapping="Wrap" Text="Name:" VerticalAlignment="Top"/>
+            <TextBlock x:Name="UserName" HorizontalAlignment="Left" Margin="218,14,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <TextBlock Margin="175,32,116,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Text="Gender:"/>
+            <TextBlock x:Name="UserGender" HorizontalAlignment="Left" Margin="223,32,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <TextBlock Margin="175,49,74,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Text="Average Score:"/>
+            <TextBlock x:Name="UserAverageScore" HorizontalAlignment="Left" Margin="261,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <TextBlock Margin="175,88,102,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Text="Handicap:"/>
+            <TextBlock x:Name="Handicap" HorizontalAlignment="Left" Margin="240,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <Button x:Name="ClearBtn" Content="Clear" HorizontalAlignment="Left" Margin="69,168,0,0" VerticalAlignment="Top" Click="Clear"/>
+            <Button x:Name="X" Content="X" HorizontalAlignment="Left" Margin="361,4,0,0" VerticalAlignment="Top" Click="ExitBtn" Background="#FFB80000" Height="21" Width="21"/>
+            <Label Content="Top Scoring Game:" HorizontalAlignment="Left" Margin="170,63,0,0" VerticalAlignment="Top"/>
+            <TextBlock x:Name="TopGame" HorizontalAlignment="Left" Margin="284,68,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top"/>
+            <Label Content="Gender:" HorizontalAlignment="Left" Margin="12,120,0,0" VerticalAlignment="Top" Width="68" FontSize="8"/>
+        </Grid>
+    </Viewbox>
+</Window>
